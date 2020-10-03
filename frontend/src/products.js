@@ -1,7 +1,7 @@
 const products = [
   {
     _id: '1',
-    name: 'Bar at the Folies Bergere',
+    name: 'Bar at the Folies Bergère',
     image: '/images/A Bar at the Folies-Bergere-Manet.jpg',
     description:
       'Painting by Manet depicting a scene in the Folies Bergère nightclub in Paris. (1882).',
