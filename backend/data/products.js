@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Bar at the Folies Bergère',
     image: '/images/A_Bar_at_the_Folies-Bergere-Manet.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'Asakusa Rice Field During the Cock Festival at Otori Shrine.',
     image:
       '/images/Asakusa_Rice_Field_During_the_Cock_Festival_at_Otori_Shrine-Hokusai.jpg',
@@ -27,7 +25,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Jas de Bouffan, The Pool-Cezanne',
     image: '/images/Jas_de_Bouffan_The_Pool-Cezanne.jpg',
     description:
@@ -40,7 +37,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'Lady with an Ermine',
     image: '/images/Lady_with_an_Ermine-DaVinci.jpg',
     description:
@@ -53,7 +49,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'The Great Wave Off Kanagawa',
     image: '/images/The_Great_Wave_Off_Kanagawa-Hokusai.jpg',
     description:
@@ -66,7 +61,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'The Luncheon of the Boating Party',
     image: '/images/The_Luncheon_of_the_Boating_Party-Renoir.jpg',
     description:
