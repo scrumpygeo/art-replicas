@@ -25,7 +25,8 @@ router.get(
     if (product) {
       res.json(product)
     } else {
-      res.status(404).json({ message: 'Product not found' })
+      res.status(404) // this line optional; without it it will just throw 500 error
+      throw new Error('Product not found')
     }
   })
 )
