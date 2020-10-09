@@ -18,7 +18,7 @@ const cartItemsFromStorage = localStorage.getItem('cartItems')
   : []
 
 const initialState = {
-  cart: { cartITems: cartItemsFromStorage },
+  cart: { cartItems: cartItemsFromStorage },
 }
 
 const middleWare = [thunk]
