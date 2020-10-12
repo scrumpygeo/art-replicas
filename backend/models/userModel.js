@@ -32,6 +32,18 @@ userSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password)
 }
 
+// middleware: b4 (pre) save, encrypt the pwd
+userSchema.pre('save', async function (next) {
+  // only hash the pwd if it's been modified. Otherwise u wont be able to log in
+  // & don't run it if we update our name or email but not pwd.
+  if (!this.isModified('password')) {
+    next()
+  }
+
+  const salt = await bcrypt.genSalt(10)
+  this.password = await bcrypt.hash(this.password, salt)
+})
+
 //  create model from the schema called user
 const User = mongoose.model('User', userSchema)
 
