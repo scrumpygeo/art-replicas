@@ -77,9 +77,9 @@ const ProductScreen = ({ history, match }) => {
 
                 {product.countInStock > 0 && (
                   <ListGroup.Item>
-                    <Col>
-                      <Row>Qty</Row>
-                      <Row>
+                    <Row>
+                      <Col>Qty</Col>
+                      <Col>
                         <Form.Control
                           as='select'
                           value={qty}
@@ -91,8 +91,8 @@ const ProductScreen = ({ history, match }) => {
                             </option>
                           ))}
                         </Form.Control>
-                      </Row>
-                    </Col>
+                      </Col>
+                    </Row>
                   </ListGroup.Item>
                 )}
 
