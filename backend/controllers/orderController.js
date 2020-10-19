@@ -45,7 +45,7 @@ const getOrderById = asyncHandler(async (req, res) => {
   // fetch order and we want name and email as well
   const order = await Order.findById(req.params.id).populate(
     'user',
-    'name, email'
+    'name email'
   )
 
   if (order) {

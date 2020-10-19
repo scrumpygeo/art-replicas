@@ -87,7 +87,7 @@ const PlaceOrderScreen = ({ history }) => {
                             src={item.image}
                             alt={item.name}
                             fluid
-                            roundex
+                            roundex='true'
                           />
                         </Col>
                         <Col>
