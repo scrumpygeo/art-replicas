@@ -82,12 +82,11 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
   }
 })
 
-// @descr       GET logged in user orders
-// @route       GET /api/orders/myorders
-// @access      Private
+// @desc    Get logged in user orders
+// @route   GET /api/orders/myorders
+// @access  Private
 const getMyOrders = asyncHandler(async (req, res) => {
-  // fetch order and we want name and email as well
-  const orders = await Order.find({ user: req.order.user._id })
+  const orders = await Order.find({ user: req.user._id })
   res.json(orders)
 })
 
